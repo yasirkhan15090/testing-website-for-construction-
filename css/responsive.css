@@ -1,0 +1,376 @@
+/* ============================================
+   AL-BINA CONSTRUCTION — RESPONSIVE STYLES
+   Mobile-first breakpoints
+   ============================================ */
+
+/* --- Tablet & Below (≤ 1024px) --- */
+@media (max-width: 1024px) {
+  /* Navigation */
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-cta {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  /* Trust Grid */
+  .trust-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Services Grid */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Why Choose Us */
+  .why-choose {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .why-choose-stats {
+    order: -1;
+  }
+
+  /* Process Timeline */
+  .process-timeline {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .process-timeline::before {
+    display: none;
+  }
+
+  /* Projects Grid */
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Safety */
+  .safety-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .safety-image {
+    max-height: 400px;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  /* Service Detail */
+  .service-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .service-sidebar {
+    position: static;
+  }
+}
+
+/* --- Mobile (≤ 768px) --- */
+@media (max-width: 768px) {
+  /* Typography scale down */
+  h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 100vh;
+    padding: 120px 0 100px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-shapes {
+    display: none;
+  }
+
+  .hero-scroll {
+    bottom: 20px;
+  }
+
+  /* Trust Grid */
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .trust-item:last-child {
+    grid-column: 1 / -1;
+  }
+
+  /* Services */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .service-card {
+    padding: 28px 20px;
+  }
+
+  /* Why Choose Us */
+  .why-choose-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .stat-card {
+    padding: 24px 16px;
+  }
+
+  .why-choose-item {
+    padding: 14px 16px;
+  }
+
+  /* Process */
+  .process-timeline {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .process-step-number {
+    width: 48px;
+    height: 48px;
+    font-size: 1rem;
+  }
+
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .project-card {
+    aspect-ratio: 16/10;
+  }
+
+  .project-overlay {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* Safety */
+  .safety-image {
+    max-height: 300px;
+  }
+
+  /* CTA */
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  /* Service Detail */
+  .service-includes {
+    grid-template-columns: 1fr;
+  }
+
+  .contract-options {
+    grid-template-columns: 1fr;
+  }
+
+  /* Back to top */
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+  }
+
+  /* WhatsApp Float */
+  .whatsapp-float {
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+  }
+
+  /* Page Hero */
+  .page-hero {
+    padding: 130px 0 60px;
+  }
+}
+
+/* --- Small Mobile (≤ 480px) --- */
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 16px;
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  h2 {
+    font-size: clamp(1.3rem, 6vw, 1.7rem);
+  }
+
+  /* Navbar */
+  .navbar-brand-tagline {
+    display: none;
+  }
+
+  .navbar-logo {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .navbar-brand-name {
+    font-size: 1rem;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 110px 0 80px;
+  }
+
+  .hero-label {
+    font-size: 0.75rem;
+    padding: 8px 14px;
+  }
+
+  .hero-description {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+
+  .btn-lg {
+    padding: 14px 28px;
+    font-size: 0.95rem;
+  }
+
+  /* Trust */
+  .trust-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .trust-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  .trust-text {
+    font-size: 0.78rem;
+  }
+
+  /* Stats */
+  .why-choose-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  /* Process */
+  .process-timeline {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .process-step h4 {
+    font-size: 0.8rem;
+  }
+
+  /* Section spacing */
+  .section {
+    padding: clamp(48px, 8vw, 80px) 0;
+  }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+
+  /* Mobile menu links */
+  .mobile-menu a {
+    font-size: 1.3rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 60px 0 0;
+  }
+
+  .footer-brand p {
+    font-size: 0.85rem;
+  }
+
+  .footer-heading {
+    font-size: 0.9rem;
+  }
+
+  .footer-links a {
+    font-size: 0.85rem;
+  }
+}
+
+/* --- Large Desktop (≥ 1440px) --- */
+@media (min-width: 1440px) {
+  :root {
+    --container-max: 1400px;
+  }
+
+  .hero-content {
+    max-width: 900px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+}
