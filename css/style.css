@@ -634,19 +634,21 @@ p {
 
 .hero-scroll {
   position: absolute;
-  bottom: 40px;
+  bottom: 12px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 3;
+  z-index: 4;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   color: var(--text-muted);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   animation: float 3s ease-in-out infinite;
+  pointer-events: none;
+  opacity: 0.6;
 }
 
 .hero-scroll-line {
@@ -825,6 +827,7 @@ p {
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   font-size: 1.6rem;
+  color: var(--primary);
   margin-bottom: 20px;
   transition: all var(--transition-base);
 }
@@ -832,6 +835,7 @@ p {
 .service-card:hover .service-card-icon {
   background: var(--primary);
   border-color: var(--primary);
+  color: var(--bg-dark);
   transform: scale(1.05) rotate(5deg);
   box-shadow: var(--shadow-gold);
 }
